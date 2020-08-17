@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ribeirão Preto - SP - Erro</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}" type="text/css" media="all" />
+
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="overlay"></div>
+    <div class="terminal">
+      <h1>Erro <span class="errorcode">Carregando a página</span></h1>
+      <p class="output">Ocorreu um erro tentando carregar a página ou os dados meteorológicos.</p>
+      <p class="output">Por favor, tente mais tarde ou clique <a href="/">aqui para tentar novamente</a>.</p>
+      <p class="output">Boa sorte!</p>
+    </div>
+</body>
+</html>

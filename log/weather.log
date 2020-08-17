@@ -1,0 +1,90 @@
+2020-08-17 18:01:26,089 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 20, in index
+    lista = json_response.daily
+AttributeError: 'dict' object has no attribute 'daily'
+2020-08-17 18:01:30,462 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 20, in index
+    lista = json_response.daily
+AttributeError: 'dict' object has no attribute 'daily'
+2020-08-17 19:22:38,293 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 47, in index
+    mensagem=msg, dias_quarda_chuva=dias_quarda_chuva)
+UnboundLocalError: local variable 'dias_quarda_chuva' referenced before assignment
+2020-08-17 19:23:38,842 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 47, in index
+    mensagem=msg, dias_quarda_chuva=dias_quarda_chuva)
+UnboundLocalError: local variable 'dias_quarda_chuva' referenced before assignment
+2020-08-17 19:30:59,498 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 43, in index
+    dias_quarda_chuva = dias_quarda_chuva.rsplit(',', ' e ')
+TypeError: 'str' object cannot be interpreted as an integer
+2020-08-17 20:20:43,429 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:21:15,988 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:21:48,145 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:22:01,439 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:22:37,736 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:27:21,779 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:27:51,344 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:29:58,364 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:30:39,961 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:31:00,822 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:31:04,288 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:31:06,838 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero
+2020-08-17 20:31:35,133 ERROR <SoraIA_APP> Erro carregando os dados de previsão de tempo.
+Traceback (most recent call last):
+  File "/Users/alessandro/Documents/weather-mini-challenge/app.py", line 18, in index
+    x = 2 / 0
+ZeroDivisionError: division by zero

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Ribeirão Preto - SP</title>
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+		<!-- Style -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" media="all" />
+
+		<!-- JavaScript -->
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+
+		<!-- Web-Fonts -->
+		<link href='//fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>
+		<!-- //Web-Fonts -->
+
+	</head>
+
+	<!-- Body -->
+	<body onload="startTime()">
+
+			<!-- Container Principal -->
+			<div class="container">
+
+				<!-- Cidade -->
+				<div class="city">
+					<div class="title">
+						<h3>São Paulo</h3>
+						<h2>Ribeirão Preto</h2>
+					</div>
+					<div class="date-time">
+						<div class="dmy">
+							<div id="txt"></div>
+							<div class="date">
+								<!-- Data atual -->
+								<script type="text/javascript">
+									var mydate = new Date();
+									var year = mydate.getYear();
+
+									if (year < 1000)
+										year += 1900;
+
+									var day=mydate.getDay();
+									var month=mydate.getMonth();
+									var daym=mydate.getDate();
+
+									if (daym < 10)
+										daym = "0" + daym;
+									var dayarray = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado");
+									var montharray = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+									document.write(dayarray[day]+", " + daym + " de " +montharray[month] + " de " + year);
+								</script>
+								<!-- //Data atual -->
+							</div>
+						</div>
+						<div class="temperature">
+							<p>{{ temperatura }}°<span>C</span></p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!-- //Cidade -->
+
+				<!-- Previsao -->
+				<div class="forecast">
+					<div class="forecast-icon">
+						<img src="{{ url_for('static', filename='images/forecast.png') }}" alt="Cloud">
+					</div>
+					<div class="today-weather">
+						<h3>Humidade</h3>
+						<ul>
+							{% for item in humidades %}
+								<li>{{ item['dia'] }} <span> {{ item['humidade'] }}% </span></li>
+							{% endfor %}
+						</ul>
+					</div>
+					<!-- Mensagem -->
+					{% if dias_quarda_chuva %}
+						<div class="message">
+							Você deve levar guarda-chuva nestes dias:
+							<span class="message-span blinking">{{ dias_quarda_chuva }}</span>
+						</div>
+					{% endif %}
+					<!--// Mensagem -->
+
+				</div>
+				<!-- //Previsao -->
+
+				<div class="clear"></div>
+
+			</div>
+			<!-- //Container -->
+
+	</body>
+	<!-- //Body -->
+
+</html>
